@@ -98,7 +98,7 @@ body {
 }
 
 div {
-  margin: 1rem;
+  margin: 1rem 0;
 }
 
 .tabs {
@@ -191,12 +191,18 @@ div {
         AI for Code
     </button>
     <button class="tab-button" role="tab"
+        data-tab="crypto"
+        aria-selected="false"
+        onclick="window.location.href='https://mab.xyz'">
+      Crypto
+    </button>
+    <button class="tab-button" role="tab"
             data-tab="audit"
             aria-selected="false"
             aria-controls="audit"
             id="audit-tab"
             onclick="openTab(event, 'audit')">
-        Audit &amp; Compliance
+        Software Supply Chain
     </button>
     <button class="tab-button" role="tab"
             data-tab="diligence"
@@ -214,6 +220,7 @@ div {
             onclick="openTab(event, 'speaking')">
         Speaking
     </button>
+
   </nav>
 
   <div id="about" class="tab-content active" 
@@ -377,9 +384,8 @@ div {
        role="tabpanel"
        aria-labelledby="audit-tab"
        tabindex="0">
-    <h2>Expert Code Auditing &Amp Compliance Services</h2>
-    <p>Trust your codebase review to world-class experts in software engineering. MAB, led by Prof. Martin Monperrus, brings decades of experience and scientific rigor to code auditing and code compliance.</p>
-    
+    <h2>Software Supply Chain Services</h2>
+    <p>Understand and secure your software supply chain with world-class experts in software engineering. MAB, led by Prof. Martin Monperrus, brings world-class expertise and scientific rigor to supply chain audits, dependency analysis, and supply chain compliance verification.</p>
     <h3>Why Choose MAB for Your Code Audit?</h3>
     <ul>
       <li>🎓 <strong>Academic Excellence:</strong> Led by KTH Professor with 100+ peer-reviewed publications</li>
@@ -393,24 +399,19 @@ div {
 
       <div class="service">
         <h4>Supply Chain Security Audit</h4>
-        <p>Comprehensive analysis of your dependencies and suppliers (license)</p>
-        <p>Identification of dependency threats and attack surface</p>
+        <p>Comprehensive analysis of your dependencies and suppliers</p>
+        <p>Identification of dependency threats, attack surface and license issues.</p>
         <p class="proof">→ <a href="https://chains.proj.kth.se/">See our supply chain security research</a></p>
       </div>
       
       <div class="service">
-        <h4>Compliance </h4>
+        <h4>Supply Chain Compliance Processes</h4>
         <p>Compliance with Cyber Resilience Act (CRA)</p>
         <p>Production of compliant Software Bill of Materials (SBOM), licenses and build attestations for regulatory bodies</p>
-        <p>3rd party audit of attestation pipelines (chainloop)</p>
+        <p>3rd party attestation of reproducible builds and compilation (chainloop)</p>
         <p class="proof">→ <a href="https://chains.proj.kth.se/">See our supply chain security research</a></p>
       </div>
 
-      <div class="service">
-        <h4>Smart Contract Verification</h4>
-        <p>Rigorous verification of blockchain smart contracts for security and correctness</p>
-        <p class="proof">→ <a href="https://www.monperrus.net/martin/album?keywords=crypto">View our blockchain security work</a></p>
-      </div>
       
       <div class="service">
         <h4>Technical Debt Assessment</h4>
@@ -420,8 +421,7 @@ div {
     </div>
 
     <div class="cta-section">
-      <h3>Ready to Secure Your Codebase?</h3>
-      <p>Contact us for a confidential discussion about your audit needs. We offer:</p>
+      <p>Contact us for a confidential discussion about your audit needs.</p>
       <ul>
         <li>✓ Custom-tailored audit plans</li>
         <li>✓ Clear, actionable recommendations</li>
