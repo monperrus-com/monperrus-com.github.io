@@ -1,29 +1,42 @@
 <html lang="en">
+  <script>
+  (function(){
+    var code = [38,38,40,40,37,39,37,39,66,65], pos=0;
+    function trigger(){
+      var show = function(){
+        var d = document.createElement('div');
+        d.id = 'mab-easter-egg';
+        d.textContent = '🥚 You found the easter egg! Send me a screenshot!';
+        Object.assign(d.style, {
+          position: 'fixed', top: '12px', right: '12px',
+          background: '#ffd700', color: '#000', padding: '10px 14px',
+          borderRadius: '8px', cursor: 'pointer', zIndex: 99999, fontFamily: 'monospace'
+        });
+        document.body.appendChild(d);
+      };
+      if (document.readyState === 'complete') show(); else window.addEventListener('load', show);
+    }
+    window.addEventListener('keydown', function(e){
+      if (e.keyCode === code[pos]) { pos++; if (pos === code.length) { pos = 0; trigger(); } }
+      else pos = (e.keyCode === code[0]) ? 1 : 0;
+    }, false);
+  })();
+  </script>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Enhanced SEO Meta Tags -->
-    <title>Expert Software Engineering Services | Prof. Martin Monperrus</title>
-    <meta name="description" content="Expert code auditing and transformation services by Prof. Martin Monperrus from KTH Stockholm. Security audits, technical due diligence, and automated code modernization. EU-based, GDPR-compliant consulting.">
-    <meta name="keywords" content="software engineering, code audit, technical due diligence, code compliance, code transformation, security audit, supply chain audit, Stockholm">
-    <meta name="author" content="Martin Monperrus">
+    <title>World Expert Software Engineering Consultancy | Prof. Martin Monperrus</title>
+    <meta name="description" content="World-class software engineering consultancy led by Prof. Martin Monperrus (KTH). Services: code & supply-chain audits, AI-for-code, technical due diligence, security reviews, and GDPR-compliant consulting across Europe.">
+    <meta name="keywords" content="world-class software engineering, Martin Monperrus, KTH, software consultancy, code audit, supply chain security, AI for code, technical due diligence, GDPR-compliant consulting, software modernization, security audit, SBOM">
     <meta name="robots" content="index, follow">
     
-    <!-- Enhanced Social Media Tags -->
-    <meta property="og:title" content="Expert Software Engineering Services | Prof. Martin Monperrus">
-    <meta property="og:description" content="Expert code auditing and transformation services by Prof. Martin Monperrus from KTH Stockholm. Security audits, technical due diligence, and automated code modernization. EU-based, GDPR-compliant consulting>
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://monperrus.com/">
-        
+    <meta property="og:url" content="https://monperrus.com/">        
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://monperrus.com/">
     
-    <!-- Language Alternates - if you have multiple language versions -->
-    <!-- <link rel="alternate" hreflang="en" href="https://monperrus.com/"> -->
-    
-
     <style>
 
 body {
@@ -163,7 +176,7 @@ div {
 </style>
 </head>
 <body style="background-color: black;color: white;" role="document">
-<header class="stack" role="banner">
+<header title="↑ ↑ ↓ ↓ ← → ← → B A" class="stack" role="banner">
 <span style="--index: 0;" role="heading" aria-level="1">&nbsp;monperrus.com
 </span>
 <span style="--index: 1;">&nbsp;monperrus.com
