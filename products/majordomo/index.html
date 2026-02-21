@@ -366,6 +366,59 @@
     }
     .step p { font-size: 15px; color: var(--text-muted); line-height: 1.65; }
 
+    /* ===== Try It ===== */
+    #try-it { padding: 0 0 96px; }
+    .try-card {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+      background: var(--bg-card);
+      border: 1px solid var(--border-light);
+      border-radius: var(--r-lg);
+      padding: 52px 56px;
+      position: relative;
+      overflow: hidden;
+    }
+    .try-card::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 80% at 100% 50%, var(--accent-glow) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .try-left h2 {
+      font-size: clamp(28px, 3vw, 40px);
+      font-weight: 300;
+      letter-spacing: -0.02em;
+      margin-bottom: 14px;
+    }
+    .try-left p { font-size: 15px; color: var(--text-muted); line-height: 1.7; }
+    .try-right { position: relative; z-index: 1; }
+    .try-address-wrap {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-light);
+      border-radius: var(--r);
+      padding: 28px 32px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .try-label { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-dim); }
+    .try-address {
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 15px;
+      color: var(--accent);
+      word-break: break-all;
+      transition: opacity 0.2s;
+    }
+    .try-address:hover { opacity: 0.75; }
+    .try-hint { font-size: 13px; color: var(--text-dim); font-style: italic; }
+    @media (max-width: 768px) {
+      .try-card { grid-template-columns: 1fr; padding: 36px 28px; }
+      #try-it { padding: 0 0 68px; }
+    }
+
     /* ===== Pricing ===== */
     #pricing { text-align: center; }
     .pricing-wrap { display: inline-block; text-align: left; width: 100%; max-width: 460px; }
@@ -613,15 +666,6 @@
         <h3>Multi-mailbox support</h3>
         <p>Connect as many inboxes as you need. One deployment, dozens of mailboxes — each with its own rules, persona, and escalation policy.</p>
       </div>
-      <div class="feature-card fade-up d5">
-        <div class="feature-icon" aria-hidden="true">
-          <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z"/>
-          </svg>
-        </div>
-        <h3>Self-hostable</h3>
-        <p>Stricter data requirements? Run Majordomo on your own infrastructure. Full stack, your servers, your control. No vendor lock-in.</p>
-      </div>
     </div>
   </div>
 </section>
@@ -649,6 +693,26 @@
         <div class="step-num" aria-hidden="true">03</div>
         <h3>You may go touch grass.</h3>
         <p>Majordomo monitors the inbox around the clock. New email arrives, a reply goes out. You get escalations only when the agent decides they're warranted.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Try it ===== -->
+<section id="try-it" aria-labelledby="try-heading">
+  <div class="container">
+    <div class="try-card fade-up">
+      <div class="try-left">
+        <span class="label">Live demo</span>
+        <h2 id="try-heading">See it in action.<br>Right now.</h2>
+        <p>Send any email to the address below and a real Majordomo agent will reply — autonomously, within seconds. No sign-up required.</p>
+      </div>
+      <div class="try-right">
+        <div class="try-address-wrap">
+          <span class="try-label">Send an email to</span>
+          <a href="mailto:acme-corp-bot@agents.monperrus.com" class="try-address">acme-corp-bot@agents.monperrus.com</a>
+          <span class="try-hint">Write anything. See what comes back.</span>
+        </div>
       </div>
     </div>
   </div>
