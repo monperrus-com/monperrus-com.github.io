@@ -27,9 +27,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Enhanced SEO Meta Tags -->
-    <title>Expert Software Engineering Consultancy | Prof. Martin Monperrus</title>
-    <meta name="description" content="World-class software engineering consultancy led by Prof. Martin Monperrus (KTH). Services: code & supply-chain audits, AI-for-code, technical due diligence, security reviews, and GDPR-compliant consulting across Europe.">
-    <meta name="keywords" content="world-class software engineering, Martin Monperrus, KTH, software consultancy, code audit, supply chain security, AI for code, technical due diligence, GDPR-compliant consulting, software modernization, security audit, SBOM">
+    <title>Keynote Speaker, Strategic Advisor & Expert Witness | Prof. Martin Monperrus</title>
+    <meta name="description" content="Prof. Martin Monperrus (KTH, IEEE Fellow): keynote speaker, executive technical briefings for the C-suite, strategic advisor on software strategy and system design, expert witness, and technical loss assessor for crypto and digital-asset incidents.">
+    <meta name="keywords" content="Martin Monperrus, KTH, IEEE Fellow, keynote speaker, executive briefing, CTO advisor, software strategy, system design, technical due diligence, expert witness, software litigation, crypto loss assessment, loss adjuster, smart contract exploit, software supply chain, AI for code">
     <meta name="robots" content="index, follow">
     
     <meta property="og:url" content="https://monperrus.com/">        
@@ -186,54 +186,55 @@ div {
   </header><br/>
 
 <main class="tabs" role="main">
-  <nav class="tabs-nav" role="tablist" aria-label="Services">
-    <button class="tab-button active" role="tab" 
-            data-tab="about" 
+  <nav class="tabs-nav" role="tablist" aria-label="Roles">
+    <button class="tab-button active" role="tab"
+            data-tab="about"
             aria-selected="true"
             aria-controls="about"
             id="about-tab"
             onclick="openTab(event, 'about')">
-        About Us
+        About
     </button>
     <button class="tab-button" role="tab"
-            data-tab="ai-for-code"
+            data-tab="speaker"
             aria-selected="false"
-            aria-controls="ai-for-code"
-            id="ai-for-code-tab"
-            onclick="openTab(event, 'ai-for-code')">
-        AI for Code
+            aria-controls="speaker"
+            id="speaker-tab"
+            onclick="openTab(event, 'speaker')">
+        Keynote Speaker
     </button>
     <button class="tab-button" role="tab"
-        data-tab="crypto"
-        aria-selected="false"
-        onclick="window.location.href='https://mab.xyz'">
-      Crypto
-    </button>
-    <button class="tab-button" role="tab"
-            data-tab="audit"
+            data-tab="briefings"
             aria-selected="false"
-            aria-controls="audit"
-            id="audit-tab"
-            onclick="openTab(event, 'audit')">
-        Software Supply Chain
+            aria-controls="briefings"
+            id="briefings-tab"
+            onclick="openTab(event, 'briefings')">
+        Executive Briefings
     </button>
     <button class="tab-button" role="tab"
-            data-tab="diligence"
+            data-tab="advisory"
             aria-selected="false"
-            aria-controls="diligence"
-            id="diligence-tab"
-            onclick="openTab(event, 'diligence')">
-        Due Diligence
+            aria-controls="advisory"
+            id="advisory-tab"
+            onclick="openTab(event, 'advisory')">
+        Strategic Advisor
     </button>
     <button class="tab-button" role="tab"
-            data-tab="speaking"
+            data-tab="expert-witness"
             aria-selected="false"
-            aria-controls="speaking"
-            id="speaking-tab"
-            onclick="openTab(event, 'speaking')">
-        Speaking
+            aria-controls="expert-witness"
+            id="expert-witness-tab"
+            onclick="openTab(event, 'expert-witness')">
+        Expert Witness
     </button>
-
+    <button class="tab-button" role="tab"
+            data-tab="loss-assessment"
+            aria-selected="false"
+            aria-controls="loss-assessment"
+            id="loss-assessment-tab"
+            onclick="openTab(event, 'loss-assessment')">
+        Loss Assessor
+    </button>
   </nav>
 
   <div id="about" class="tab-content active" 
@@ -245,6 +246,12 @@ div {
       <p class="lead">
         MAB is a leading European software engineering consultancy in Stockholm, Sweden, founded by 
         <a href="https://kth.se/profile/monp/">Professor Martin Monperrus</a> (<a href="https://www.linkedin.com/in/martin-monperrus-369300a4/">LinkedIn</a>).
+        Prof. Monperrus serves clients as
+        <a href="#speaker">keynote speaker</a>,
+        <a href="#briefings">executive briefer</a>,
+        <a href="#advisory">strategic advisor</a>,
+        <a href="#expert-witness">expert witness</a> and
+        <a href="#loss-assessment">technical loss assessor</a>.
       </p>
     </div>
 
@@ -394,210 +401,65 @@ div {
     </style>
   </div>
 
-  <div id="audit" class="tab-content"
+  <style>
+    .role-tagline {
+      font-size: 1.2em;
+      line-height: 1.5;
+      border-left: 4px solid #666;
+      padding-left: 20px;
+      margin: 0 0 2em 0;
+    }
+    .role-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      margin: 20px 0;
+    }
+    .role-card {
+      background: #333;
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid #444;
+    }
+    .role-card h4 {
+      color: #fff;
+      margin-top: 0;
+    }
+    .proof {
+      border-top: 1px solid #444;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+    .cta-section {
+      background: #333;
+      padding: 30px;
+      border-radius: 8px;
+      margin-top: 30px;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #666;
+      color: white;
+      padding: 15px 30px;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+    .cta-button:hover {
+      background: #888;
+      transform: translateY(-2px);
+    }
+  </style>
+
+  <div id="speaker" class="tab-content"
        role="tabpanel"
-       aria-labelledby="audit-tab"
+       aria-labelledby="speaker-tab"
        tabindex="0">
-    <h2>Software Supply Chain Services</h2>
-    <p>Understand and secure your software supply chain with world-class experts in software engineering. MAB, led by Prof. Martin Monperrus, brings world-class expertise and scientific rigor to supply chain audits, dependency analysis, and supply chain compliance verification.</p>
-    <h3>Why Choose MAB for Your Code Audit?</h3>
-    <ul>
-      <li>🎓 <strong>Academic Excellence:</strong> Led by KTH Professor with 100+ peer-reviewed publications</li>
-      <li>🏢 <strong>Industry Track Record:</strong> Successful audits for Fortune 500 companies and innovative startups</li>
-      <li>🔬 <strong>Scientific Approach:</strong> Evidence-based methodologies backed by research</li>
-      <li>🛡️ <strong>Full stack Coverage:</strong> From backend to front-end audits.</li>
-    </ul>
+    <h2>Keynote Speaker</h2>
+    <p class="role-tagline">Prof. Martin Monperrus, IEEE Fellow and KTH professor, gives the keynote that tells your audience where software, AI and security are actually heading, grounded in 100+ peer-reviewed publications, not in vendor narratives.</p>
 
-    <h3>Our Specialized Audit Services</h3>
-    <div class="audit-services">
-
-      <div class="service">
-        <h4>Supply Chain Security Audit</h4>
-        <p>Comprehensive analysis of your dependencies and suppliers</p>
-        <p>Identification of dependency threats, attack surface and license issues.</p>
-        <p class="proof">→ <a href="https://chains.proj.kth.se/">See our supply chain security research</a></p>
-      </div>
-      
-      <div class="service">
-        <h4>Supply Chain Compliance Processes</h4>
-        <p>Compliance with Cyber Resilience Act (CRA)</p>
-        <p>Production of compliant Software Bill of Materials (SBOM), licenses and build attestations for regulatory bodies</p>
-        <p>3rd party attestation of reproducible builds and compilation (chainloop)</p>
-        <p class="proof">→ <a href="https://chains.proj.kth.se/">See our supply chain security research</a></p>
-      </div>
-
-      
-      <div class="service">
-        <h4>Technical Debt Assessment</h4>
-        <p>Scientific evaluation of your codebase quality and maintenance needs</p>
-        <p class="proof">→ <a href="https://github.com/SpoonLabs/sorald/">Check our automated repair tools</a></p>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <p>Contact us for a confidential discussion about your audit needs.</p>
-      <ul>
-        <li>✓ Custom-tailored audit plans</li>
-        <li>✓ Clear, actionable recommendations</li>
-        <li>✓ Evidence-based improvement strategies</li>
-        <li>✓ Post-audit support and guidance</li>
-      </ul>
-      <a href="mailto:martin@monperrus.com?subject=Code Audit Request&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in discussing a code audit for our organization." class="cta-button">Request Audit Consultation</a>
-    </div>
-
-    <style>
-      .audit-services {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin: 20px 0;
-      }
-      .service {
-        background: #333;
-        padding: 20px;
-        border-radius: 8px;
-        border: 1px solid #444;
-      }
-      .service h4 {
-        color: #fff;
-        margin-top: 0;
-      }
-      .proof {
-        border-top: 1px solid #444;
-        padding-top: 10px;
-        margin-top: 10px;
-      }
-      .cta-section {
-        background: #333;
-        padding: 30px;
-        border-radius: 8px;
-        margin-top: 30px;
-      }
-      .cta-button {
-        display: inline-block;
-        background: #666;
-        color: white;
-        padding: 15px 30px;
-        border-radius: 5px;
-        text-decoration: none;
-        margin-top: 20px;
-        transition: all 0.3s ease;
-      }
-      .cta-button:hover {
-        background: #888;
-        transform: translateY(-2px);
-      }
-    </style>
-  </div>
-
-  <div id="diligence" class="tab-content"
-       role="tabpanel"
-       aria-labelledby="diligence-tab"
-       tabindex="0">
-    <h2>Technical Due Diligence Excellence</h2>
-    <p class="dd-intro">Make confident investment decisions with expert technical due diligence from MAB. Our deep expertise helps VCs and angel investors validate technical claims and assess startup potential.</p>
-    
-    <div class="dd-highlights">
-      <div class="highlight-box">
-        <h3>🔍 Deep Technical Assessment</h3>
-        <ul>
-          <li>Code quality and scalability analysis</li>
-          <li>Architecture and tech stack evaluation</li>
-          <li>Technical debt quantification</li>
-          <li>Team capability assessment</li>
-        </ul>
-      </div>
-      
-      <div class="highlight-box">
-        <h3>📊 Market Position Analysis</h3>
-        <ul>
-          <li>Technical competitive analysis</li>
-          <li>Innovation assessment</li>
-          <li>IP and technology moat evaluation</li>
-          <li>Growth potential assessment</li>
-        </ul>
-      </div>
-    </div>
-
-    <h3>Why VCs Trust MAB</h3>
-    <div class="trust-points">
-      <div class="trust-item">
-        <strong>🎓 Academic Rigor</strong>
-        <p>Professor-led assessments backed by decades of research excellence</p>
-      </div>
-      <div class="trust-item">
-        <strong>⚡ Fast Turnaround</strong>
-        <p>Comprehensive reports delivered within your investment timeline</p>
-      </div>
-      <div class="trust-item">
-        <strong>🌐 Global Perspective</strong>
-        <p>Deep understanding of both European and US tech ecosystems</p>
-      </div>
-    </div>
-
-    <div class="cta-section">
-      <h3>Ready for Expert Technical Due Diligence?</h3>
-      <p>Get the insights you need for your next investment decision.</p>
-      <ul>
-        <li>Comprehensive technical assessment</li>
-        <li>Clear risk identification</li>
-        <li>Actionable recommendations</li>
-        <li>Expert guidance throughout the process</li>
-      </ul>
-      <a href="mailto:martin@monperrus.com?subject=Technical Due Diligence Request&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in discussing technical due diligence for a potential investment." class="cta-button">Schedule Initial Consultation</a>
-    </div>
-
-    <style>
-      .dd-intro {
-        font-size: 1.2em;
-        line-height: 1.5;
-        margin-bottom: 2em;
-      }
-      .dd-highlights {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        margin: 30px 0;
-      }
-      .highlight-box {
-        background: #333;
-        padding: 25px;
-        border-radius: 8px;
-        border: 1px solid #444;
-      }
-      .highlight-box h3 {
-        margin-top: 0;
-        color: #fff;
-      }
-      .trust-points {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-        margin: 30px 0;
-      }
-      .trust-item {
-        background: #333;
-        padding: 20px;
-        border-radius: 8px;
-      }
-      .case-study {
-        background: #333;
-        padding: 25px;
-        border-radius: 8px;
-        margin: 30px 0;
-        border-left: 4px solid #666;
-      }
-    </style>
-  </div>
-
-  <div id="speaking" class="tab-content"
-       role="tabpanel"
-       aria-labelledby="speaking-tab"
-       tabindex="0">
-    <h2>Keynotes & Speaking Engagements</h2>
-    <p>Prof. Martin Monperrus, IEEE Fellow, is a world-renowned speaker on software engineering, AI, and cybersecurity with 100+ publications track record. He delivers engaging keynotes and technical talks at major industry conferences, corporate events, and technical briefings.</p>
-    
-    <h3>Popular Speaking Topics</h3>
+    <h3>Signature Keynotes</h3>
     <ul>
       <li>The Future of Software Development with AI</li>
       <li>Securing the Software Supply Chain</li>
@@ -606,43 +468,195 @@ div {
       <li>The Impact of AI on the Scientific Process</li>
     </ul>
 
+    <h3>Formats</h3>
+    <div class="role-grid">
+      <div class="role-card">
+        <h4>🎤 Conference keynote</h4>
+        <p>Opening or closing keynote for industry and scientific conferences.</p>
+      </div>
+      <div class="role-card">
+        <h4>🏢 Corporate event</h4>
+        <p>Leadership offsites, engineering summits, customer days.</p>
+      </div>
+      <div class="role-card">
+        <h4>🗣️ Panels</h4>
+        <p>Expert panellist or moderator who keeps the debate sharp and on substance.</p>
+      </div>
+    </div>
+
     <div class="cta-section">
-      <h3>Book Prof. Monperrus for Your Next Event</h3>
-      <p>Bring world-class expertise to your audience, you are paying for the decades of work that shaped the ideas on stage:</p>
+      <h3>Fees</h3>
+      <p>You are paying for the decades of work that shaped the ideas on stage:</p>
       <ul>
         <li>✓ Panel participation: 1000€</li>
         <li>✓ Panel moderation: 1500€</li>
         <li>✓ 1h keynote presentation: 4000€</li>
-        <li>✓ Half-day corporate training session: 7000€</li>
-        <!-- <li>✓ Half-day corporate training session: 10000€</li> -->
-        <li>✓ Full-day corporate training session: 10000€</li>
       </ul>
-      <a href="mailto:martin@monperrus.com?subject=Speaking Engagement Request&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in booking you for a speaking engagement." class="cta-button">Inquire About Speaking</a>
+      <a href="mailto:martin@monperrus.com?subject=Keynote Request&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in booking you for a keynote." class="cta-button">Book a Keynote</a>
     </div>
   </div>
 
-  <div id="ai-for-code" class="tab-content"
+  <div id="briefings" class="tab-content"
        role="tabpanel"
-       aria-labelledby="ai-for-code-tab"
+       aria-labelledby="briefings-tab"
        tabindex="0">
-    <h2>AI for Code</h2>
-    <p>Leverage the power of Artificial Intelligence to revolutionize your software development lifecycle. MAB offers expert consulting on integrating AI into your coding practices, from automated code generation to intelligent testing and deployment.</p>
-    <p>Prof. Monperrus has been a leader in this field, receiving the <strong>ACM SIGSOFT Impact Paper Award</strong> for a seminal 2009 paper that invented concepts behind modern AI code generation (Copilot, Cursor).</p>
-    
-    <h3>Our AI for Code Offerings</h3>
+    <h2>Executive Technical Briefings</h2>
+    <p class="role-tagline">Private, closed-door briefings for CEOs, CTOs, CISOs and boards. In a few hours, your leadership team gets the technical understanding it needs to decide on AI, software supply chain and digital-asset risk, from the researcher who helped invent the field.</p>
+
+    <h3>Briefing Themes</h3>
+    <div class="role-grid">
+      <div class="role-card">
+        <h4>🤖 AI for Software Engineering</h4>
+        <p>What AI coding agents really deliver, what they cost, and how to adopt them without losing control of quality and security.</p>
+        <p class="proof">Prof. Monperrus received the <strong>ACM SIGSOFT Impact Paper Award</strong> for a 2009 paper that introduced concepts behind modern AI code generation (Copilot, Cursor).</p>
+      </div>
+      <div class="role-card">
+        <h4>🛡️ Software Supply Chain & CRA</h4>
+        <p>Your exposure through dependencies and suppliers, and what the Cyber Resilience Act (CRA) requires from your organization.</p>
+        <p class="proof">→ <a href="https://chains.proj.kth.se/">Supply chain security research</a></p>
+      </div>
+      <div class="role-card">
+        <h4>🔗 Digital Assets & Web3 Risk</h4>
+        <p>Smart contract, custody and protocol risk explained for decision makers in finance and insurance.</p>
+      </div>
+    </div>
+
+    <h3>What Your Executives Get</h3>
     <ul>
-      <li><strong>AI-Powered Code Generation:</strong> Fine-tuning large language models (LLMs) for your specific codebase and domain.</li>
-      <!-- <li><strong>Automated Code Review:</strong> Implementing AI-driven static analysis to catch bugs and security vulnerabilities before they reach production.</li> -->
-      <li><strong>Intelligent Testing:</strong> Using AI to generate comprehensive test cases and identify critical execution paths.</li>
-      <li><strong>Legacy Code Modernization:</strong> Applying AI techniques to automatically refactor and migrate legacy systems.</li>
-      <li><strong>Red Teaming Code Models:</strong> Evaluating and hardening AI models against adversarial inputs to ensure secure and reliable code generation.</li>
-      <li><strong>Benchmark Design:</strong> Creating and operating custom benchmarks to evaluate and compare the performance of AI models in code generation, understanding, and transformation tasks.</li>
+      <li>✓ A briefing tailored to your sector, your stack and your strategic questions</li>
+      <li>✓ Clear distinction between proven technology, hype, and open risk</li>
+      <li>✓ A short written memo with the key takeaways and decisions to make</li>
+      <li>✓ Strict confidentiality, NDA on request</li>
     </ul>
 
     <div class="cta-section">
-      <h3>Transform Your Development with AI</h3>
-      <p>Partner with a leader in AI and software engineering research to unlock new levels of productivity and quality.</p>
-      <a href="mailto:martin@monperrus.com?subject=AI for Code Inquiry&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in your AI for Code services." class="cta-button">Discuss Your AI Coding Strategy</a>
+      <h3>Fees</h3>
+      <ul>
+        <li>✓ Half-day executive briefing: 7000€</li>
+        <li>✓ Full-day executive briefing: 10000€</li>
+      </ul>
+      <a href="mailto:martin@monperrus.com?subject=Executive Briefing Request&body=Hello Professor Monperrus,%0D%0A%0D%0AI'm interested in an executive technical briefing for our leadership team." class="cta-button">Request a Briefing</a>
+    </div>
+  </div>
+
+  <div id="advisory" class="tab-content"
+       role="tabpanel"
+       aria-labelledby="advisory-tab"
+       tabindex="0">
+    <h2>Strategic Advisor</h2>
+    <p class="role-tagline">Senior advisory on software strategy, engineering process and system design. Prof. Monperrus works directly with CTOs, engineering leaders and investors on the decisions that are expensive to get wrong.</p>
+
+    <h3>Typical Mandates</h3>
+    <div class="role-grid">
+      <div class="role-card">
+        <h4>🧭 Software Strategy & AI Adoption</h4>
+        <p>Roadmap for AI in your development lifecycle: code generation, AI-driven testing, legacy modernization, red teaming and benchmarking of code models.</p>
+      </div>
+      <div class="role-card">
+        <h4>⚙️ Software Engineering Process</h4>
+        <p>Assessment and redesign of how your teams build, test, release and maintain software, with evidence-based improvement targets.</p>
+        <p class="proof">→ <a href="https://github.com/SpoonLabs/sorald/">Automated repair tools</a></p>
+      </div>
+      <div class="role-card">
+        <h4>🏗️ System Design & Architecture Review</h4>
+        <p>Independent review of critical architectures, scalability, technical debt and supply chain exposure, including CRA compliance (SBOM, licenses, reproducible builds).</p>
+        <p class="proof">→ <a href="https://chains.proj.kth.se/">Supply chain security research</a></p>
+      </div>
+      <div class="role-card">
+        <h4>💼 Technical Due Diligence</h4>
+        <p>For VCs, PE funds and acquirers: validation of technical claims, code quality, architecture, team capability and technology moat, delivered within your deal timeline.</p>
+      </div>
+    </div>
+
+    <h3>Engagement Model</h3>
+    <ul>
+      <li>✓ Fixed-scope assessment with a board-ready report</li>
+      <li>✓ Advisory retainer, a few days per month</li>
+      <li>✓ Advisory board seat</li>
+    </ul>
+
+    <div class="cta-section">
+      <p>Fees are quoted per mandate, after a confidential first discussion.</p>
+      <a href="mailto:martin@monperrus.com?subject=Strategic Advisory Inquiry&body=Hello Professor Monperrus,%0D%0A%0D%0AI'd like to discuss a strategic advisory engagement." class="cta-button">Discuss a Mandate</a>
+    </div>
+  </div>
+
+  <div id="expert-witness" class="tab-content"
+       role="tabpanel"
+       aria-labelledby="expert-witness-tab"
+       tabindex="0">
+    <h2>Expert Witness</h2>
+    <p class="role-tagline">Independent expert in software, AI and digital assets for courts, arbitral tribunals and law firms. An IEEE Fellow and full professor whose opinion holds under cross-examination.</p>
+
+    <h3>Areas of Expertise</h3>
+    <div class="role-grid">
+      <div class="role-card">
+        <h4>💻 Software Disputes</h4>
+        <p>Failed IT projects, defects and liability, software quality and conformity to specification.</p>
+      </div>
+      <div class="role-card">
+        <h4>📜 Intellectual Property</h4>
+        <p>Source code comparison, copyright and licensing, open-source compliance, AI-generated code.</p>
+      </div>
+      <div class="role-card">
+        <h4>🔐 Security Incidents</h4>
+        <p>Root cause of breaches and supply chain attacks, standard of care in software security.</p>
+      </div>
+      <div class="role-card">
+        <h4>🔗 Crypto & Smart Contracts</h4>
+        <p>Smart contract behavior, protocol exploits, transaction tracing and on-chain evidence.</p>
+      </div>
+    </div>
+
+    <h3>Services</h3>
+    <ul>
+      <li>✓ Independent expert reports</li>
+      <li>✓ Testimony in court and in arbitration</li>
+      <li>✓ Party-appointed or tribunal-appointed expert</li>
+      <li>✓ Consulting expert for counsel, early case assessment</li>
+    </ul>
+
+    <div class="cta-section">
+      <p>Conflict check and fees on request.</p>
+      <a href="mailto:martin@monperrus.com?subject=Expert Witness Inquiry&body=Hello Professor Monperrus,%0D%0A%0D%0AI'd like to discuss an expert witness engagement." class="cta-button">Contact for a Case</a>
+    </div>
+  </div>
+
+  <div id="loss-assessment" class="tab-content"
+       role="tabpanel"
+       aria-labelledby="loss-assessment-tab"
+       tabindex="0">
+    <h2>Technical Loss Assessor</h2>
+    <p class="role-tagline">When a software failure or a crypto exploit causes a loss, insurers, liquidators and claimants need a precise, defensible answer: what happened, why, and how much was lost. Our specialty is digital-asset losses.</p>
+
+    <h3>What We Establish</h3>
+    <div class="role-grid">
+      <div class="role-card">
+        <h4>🔍 Root Cause</h4>
+        <p>Smart contract exploits, bridge and DeFi hacks, private key compromise, oracle manipulation, software failures.</p>
+      </div>
+      <div class="role-card">
+        <h4>💰 Quantum of Loss</h4>
+        <p>On-chain tracing of the flow of funds and valuation of the assets lost.</p>
+      </div>
+      <div class="role-card">
+        <h4>⚖️ Coverage & Liability</h4>
+        <p>Technical facts mapped to policy terms: was it a hack, a design flaw, or a known risk?</p>
+      </div>
+    </div>
+
+    <h3>Who We Work For</h3>
+    <ul>
+      <li>✓ Insurers and reinsurers of digital-asset and cyber risk</li>
+      <li>✓ Loss adjusting firms requiring technical specialists</li>
+      <li>✓ Liquidators, administrators and law firms</li>
+      <li>✓ Exchanges, custodians and protocols after an incident</li>
+    </ul>
+    <p class="proof">→ <a href="https://mab.xyz">Crypto expertise at mab.xyz</a></p>
+
+    <div class="cta-section">
+      <p>Rapid deployment after an incident. Fees on request.</p>
+      <a href="mailto:martin@monperrus.com?subject=Loss Assessment Inquiry&body=Hello Professor Monperrus,%0D%0A%0D%0AI'd like to discuss a loss assessment." class="cta-button">Report an Incident</a>
     </div>
   </div>
 
@@ -650,7 +664,7 @@ div {
 
 <footer role="contentinfo">
   <div class="contact-info" aria-label="Contact Information">
-    <a href="https://www.linkedin.com/in/martin-monperrus-369300a4/">LinkedIn</a> · <a href="mailto:martin@monperrus.com">martin@monperrus.com</a>
+    <a href="https://www.linkedin.com/in/martin-monperrus-369300a4/">LinkedIn</a> · <a href="mailto:martin@monperrus.com">martin@monperrus.com</a> · <a href="/privacy">Privacy</a>
   </div>
 </footer>
 
@@ -679,7 +693,10 @@ function openTab(evt, tabName) {
 
 // Handle initial load and back/forward navigation
 function handleHashChange() {
+  // legacy topic anchors (pre role-based layout) still resolve
+  var legacy = { 'speaking': 'speaker', 'ai-for-code': 'advisory', 'audit': 'advisory', 'diligence': 'advisory', 'crypto': 'loss-assessment' };
   var hash = window.location.hash.substring(1) || 'about'; // default to about if no hash
+  hash = legacy[hash] || hash;
   var tabButton = document.querySelector(`.tab-button[data-tab="${hash}"]`);
   if (tabButton) {
     openTab({ currentTarget: tabButton }, hash);
